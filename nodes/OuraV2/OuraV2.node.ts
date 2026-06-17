@@ -2,6 +2,9 @@ import { NodeConnectionTypes, type INodeType, type INodeTypeDescription } from '
 import { activityDescription } from './resources/activity';
 import { personalInfoDescription } from './resources/personalInfo';
 import { readinessDescription } from './resources/readiness';
+import { resilienceDescription } from './resources/resilience';
+import { restModeDescription } from './resources/restMode';
+import { stressDescription } from './resources/stress';
 
 export class OuraV2 implements INodeType {
         description: INodeTypeDescription = {
@@ -33,24 +36,21 @@ export class OuraV2 implements INodeType {
                                 type: 'options',
                                 noDataExpression: true,
                                 options: [
-                                        {
-                                                name: 'Activity',
-                                                value: 'activity',
-                                        },
-                                        {
-                                                name: 'Personal Info',
-                                                value: 'personalInfo',
-                                        },
-                                        {
-                                                name: 'Readiness',
-                                                value: 'readiness',
-                                        },
+                                        { name: 'Activity', value: 'activity' },
+                                        { name: 'Personal Info', value: 'personalInfo' },
+                                        { name: 'Readiness', value: 'readiness' },
+                                        { name: 'Resilience', value: 'resilience' },
+                                        { name: 'Rest Mode', value: 'restMode' },
+                                        { name: 'Stress', value: 'stress' },
                                 ],
                                 default: 'readiness',
                         },
                         ...activityDescription,
                         ...personalInfoDescription,
                         ...readinessDescription,
+                        ...resilienceDescription,
+                        ...restModeDescription,
+                        ...stressDescription,
                 ],
         };
 }

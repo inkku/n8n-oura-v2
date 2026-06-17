@@ -29,7 +29,7 @@ export class OuraV2OAuth2Api implements ICredentialType {
                         displayName: 'Scope',
                         name: 'scope',
                         type: 'hidden',
-                        default: 'personal email daily heartrate workout tag session spo2 stress',
+                        default: 'daily',
                 },
                 {
                         displayName: 'Authentication',
