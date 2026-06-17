@@ -1,0 +1,18 @@
+{
+        "node": "n8n-nodes-oura-v2.OuraV2",
+        "nodeVersion": "1.0",
+        "codexVersion": "1.0",
+        "categories": ["Health", "Developer Tools"],
+        "resources": {
+                "credentialDocumentation": [
+                        {
+                                "url": "https://github.com/inkku/n8n-oura-v2?tab=readme-ov-file#credentials"
+                        }
+                ],
+                "primaryDocumentation": [
+                        {
+                                "url": "https://github.com/inkku/n8n-oura-v2?tab=readme-ov-file"
+                        }
+                ]
+        }
+}
