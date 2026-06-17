@@ -29,7 +29,7 @@ export class OuraV2OAuth2Api implements ICredentialType {
                         displayName: 'Scope',
                         name: 'scope',
                         type: 'hidden',
-                        default: 'daily',
+                        default: 'daily heartrate',
                 },
                 {
                         displayName: 'Authentication',
